@@ -170,7 +170,7 @@ const MySwiper = () => {
           <div className={styles.trandingSlideContent}>
             <h1 className={styles.foodPrice}>₱230</h1>
             <div className={styles.trandingSlideContentBottom}>
-              <h2 className={styles.foodName}>Viggie Ultimate</h2>
+              <h2 className={styles.foodName}>Veggie Ultimate</h2>
               <h3 className={styles.foodRating}>
                 <span>4.5</span>
                 <div className={styles.rating}>
