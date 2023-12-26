@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  color: black;
+  margin-left: 180px;
+  background: url("/img/adminbg.jpg");
+  background-size: contain;
+  /*background: rgb(226, 226, 226);*/
+}
+/* MAin Section */
+.main {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: x-large;
+}
+
+/*Menu List section  */
+.menu {
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.menuList {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  margin-top: -20px;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+.table thead tr {
+  color: #fff;
+  background: #d1411e;
+  text-align: center;
+  font-weight: bold;
+}
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+.table tbody tr {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd) {
+  background: #f3f3f3;
+}
+
+.table button {
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background: transparent;
+  border: 1px solid #4ad489;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.button:first-child {
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 110px;
+  color: white;
+  background: #3a8dec;
+  border: 1px solid rgb(0, 221, 255);
+  margin-right: 10px;
+}
+.button:first-child:hover {
+  background: #1874dc;
+  color: #fff;
+  transition: 0.5rem;
+}
+
+.button:last-child {
+  padding: 6px 20px;
+  border-radius: 10px;
+  width: 110px;
+  cursor: pointer;
+  color: white;
+  background: #e02d3c;
+  border: 1px solid #f76c6c;
+}
+
+.button:last-child:hover {
+  background: #cb1424;
+  color: #fff;
+  transition: 0.5rem;
+}

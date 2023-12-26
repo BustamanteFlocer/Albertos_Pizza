@@ -1,0 +1,126 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container .main .img {
+  width: 580px;
+  max-width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+
+.allText {
+  color: black;
+  width: 600px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+.main {
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.allText h4 {
+  font-size: 18px;
+  color: #777777;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.allText h1 {
+  font-size: clamp(35px, 4vw, 64px);
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.allText p {
+  font-size: clamp(13px, 4vw, 16px);
+  color: #777777;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.btn .button {
+  background: white;
+  padding: 20px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111111;
+  border: none;
+  outline: none;
+  box-shadow: 0px 16px 32px 0px rgb(0, 0, 0, 6%);
+  margin-right: 20px;
+}
+
+.btn .button:hover {
+  background-color: #1d44f9;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn .button2 {
+  background-color: #111111;
+  color: white;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+  }
+  .allText {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .container .main img {
+    margin-bottom: 35px;
+  }
+  .allText {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    margin-top: 0;
+  }
+  .allText p {
+    padding: 0 30px;
+  }
+}

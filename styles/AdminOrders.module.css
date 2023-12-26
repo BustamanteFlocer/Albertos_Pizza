@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  color: black;
+  margin-left: 180px;
+  background: url("/img/adminbg.jpg");
+  background-size: cover;
+}
+/* MAin Section */
+.main {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.mainTop {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  width: 100%;
+}
+.title {
+  text-align: center;
+
+  font-size: x-large;
+}
+/*Menu List section  */
+.orders {
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.ordersList {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  margin-top: -20px;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+.table thead tr {
+  color: #fff;
+  background: #d1411e;
+  text-align: center;
+  font-weight: bold;
+}
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+.table tbody tr {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd) {
+  background: #f3f3f3;
+}
+
+.deleteButton {
+  padding: 6px 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 110px;
+  cursor: pointer;
+  color: white;
+  background: #e02d3c;
+  border: 1px solid #f76c6c;
+}
+.nextButton {
+  padding: 6px 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background: #3a8dec;
+  border: 1px solid rgb(0, 221, 255);
+}
+
+.nextButton:hover {
+  background: #1874dc;
+  color: #fff;
+  transition: 0.5rem;
+}
+
+.deleteButton:hover {
+  background: #cb1424;
+  color: #fff;
+  transition: 0.5rem;
+}

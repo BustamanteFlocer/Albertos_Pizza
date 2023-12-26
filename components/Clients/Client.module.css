@@ -1,0 +1,87 @@
+.container {
+  color: black;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+@media (max-width: 840px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.container h3 {
+  font-weight: 700;
+  font-size: clamp(8px, 4vw, 20px);
+  color: #d1411e;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.container .h1 {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: clamp(30px, 4vw, 50px);
+  text-transform: capitalize;
+}
+
+.slick-list,
+.slick-slider,
+.slick-track {
+  padding: 0;
+}
+
+.slick-dots {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.slick-dots li button:before {
+  content: "";
+}
+
+.slick-dots li button {
+  width: 9px;
+  height: 4px;
+  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+  padding: 0.1rem;
+  margin-top: 1rem;
+  transition: all 400ms ease-in-out;
+  border-radius: 50px;
+}
+
+.slick-dots li.slick-active button {
+  background: #01be96;
+  width: 15px;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+
+.testimonials {
+  margin-top: 2rem;
+  position: relative;
+}
+.buttons {
+  position: absolute;
+  right: 0.7rem;
+  bottom: -2rem;
+}
+.button {
+  background-color: transparent;
+  margin-left: 0.5rem;
+  border: none;
+  color: #d1411e;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 530px) {
+  .buttons {
+    display: none;
+  }
+}

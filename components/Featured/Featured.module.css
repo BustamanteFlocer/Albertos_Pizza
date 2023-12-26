@@ -1,0 +1,130 @@
+.container {
+  height: 500px;
+  margin-top: 100px;
+  background-color: white;
+}
+
+.items {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 3%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.items > * {
+  flex: 1;
+  margin-top: 1%;
+}
+
+.right {
+  margin-left: 10%;
+}
+.left {
+  margin-left: 5%;
+}
+
+.h2 {
+  color: #000000;
+}
+.heroText .h1 {
+  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.featured2 {
+  display: none;
+}
+
+.heroText .p {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.button {
+  padding: 1em 2.1em 1.1em;
+  border-radius: 30px;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #ec1a1a;
+  color: white;
+  font-weight: 800;
+  font-size: 0.85em;
+
+  text-align: center;
+}
+
+/* Media queries */
+
+@media (max-width: 1040px) {
+  .right {
+    margin-left: 0;
+  }
+  .items > * {
+    flex: 0;
+    flex-basis: auto;
+  }
+  .container {
+    margin-top: 20%;
+    margin-bottom: 1%;
+    height: 600px;
+    flex-direction: column;
+  }
+
+  .featured1 {
+    display: none;
+  }
+
+  .featured2 {
+    display: block;
+  }
+
+  .img {
+    align-items: center;
+    justify-content: center;
+    width: 1000px; /* Set the width you desire */
+    height: 270px; /* Set the height you desire */
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+    /* This property maintains the aspect ratio while covering the container */
+  }
+
+  .heroText {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .heroText .h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .heroText .h1 {
+    font-size: 2rem;
+  }
+  .img {
+    align-items: center;
+    justify-content: center;
+    width: 720px; /* Set the width you desire */
+    height: 210px; /* Set the height you desire */
+  }
+}
+
+@media (max-width: 500px) {
+  .img {
+    align-items: center;
+    justify-content: center;
+    width: 650px; /* Set the width you desire */
+    height: 190px; /* Set the height you desire */
+  }
+}

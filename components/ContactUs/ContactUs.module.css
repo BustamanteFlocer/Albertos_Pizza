@@ -1,0 +1,498 @@
+.contain {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #fff9f7ee;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  width: 30vw;
+  height: 100%;
+  margin-bottom: 30px;
+}
+.box2 {
+  width: 46vw;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.profile {
+  height: 77vh;
+  width: 35vw;
+}
+
+.profile h1 {
+  color: #000;
+  padding-top: 10px;
+  font-size: 4rem;
+}
+
+.address {
+  margin-top: 50px;
+}
+.address h2 {
+  color: #191923;
+  font-size: 1.9rem;
+}
+
+.address p {
+  color: #191923;
+  margin-top: 15px;
+  width: 60%;
+  font-size: 1.15rem;
+}
+
+.links h2 {
+  color: #191923;
+  font-size: 1.9rem;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+.linkIcon {
+  color: #000;
+}
+
+.links div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.links a {
+  font-size: 1.15rem;
+  color: #000;
+}
+.links a {
+  text-decoration: none;
+  color: rgb(62, 59, 59);
+}
+
+.links a:hover {
+  color: orange;
+}
+
+/*Envelope*/
+
+.formWrap {
+  flex: 1;
+  overflow: hidden;
+  height: 447px;
+  position: relative;
+  width: 46vw;
+  top: 0px;
+  transition: all 1s ease-in-out 0.3s;
+}
+
+.formWrap:before {
+  content: "";
+  position: absolute;
+  bottom: 128px;
+  left: 0px;
+  background: url("https://i.imgur.com/x7PdObG.png");
+  background-size: 46vw auto;
+  background-repeat: no-repeat;
+  width: 46vw;
+  height: 55vh;
+}
+
+.formWrap:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: url("https://i.imgur.com/lfI33tF.png");
+  background-size: 46vw auto;
+  background-repeat: no-repeat;
+  width: 46vw;
+  height: 45vh;
+}
+
+.formWrap.hide:after,
+.formWrap.hide:before {
+  display: none;
+}
+
+.formWrap:hover {
+  height: 777px;
+  top: -200px;
+}
+
+.formWrap form {
+  background: white;
+  position: relative;
+  top: 200px;
+  overflow: hidden;
+  height: 200px;
+  width: 43vw;
+  margin-left: 20px;
+  border: 1px solid white;
+  border-right: 3px;
+  transition: all 1s ease-in-out 0.3s;
+}
+
+.formWrap:hover form {
+  height: 530px;
+}
+
+.formWrap label {
+  margin: 11px 20px 10px 13px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.formWrap input[type="text"],
+.formWrap textarea {
+  font: 14px normal uppercase, arial, serif;
+  color: dimgray;
+  background: none;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  height: 37px;
+  padding: 0px 10px;
+  margin: 10px 0 10px 5%;
+  border: 1px solid #cccac7;
+  border-radius: 5px;
+}
+
+.formWrap textarea {
+  height: 80px;
+  padding-top: 14px;
+}
+
+.formWrap textarea:focus,
+.formWrap input[type="text"]:focus {
+  background: white;
+}
+
+.formWrap input[type="submit"] {
+  position: relative;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: white;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  opacity: 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: #5d92ad;
+  border: 1px solid #555553;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: opacity 0.7s ease-in-out 0s;
+}
+
+.formWrap:hover input[type="submit"] {
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 1.3s;
+}
+
+@media (max-width: 1350px) {
+  .formWrap {
+    height: 430px;
+  }
+  .formWrap:before {
+    height: 52vh;
+  }
+
+  .formWrap:after {
+    height: 40vh;
+  }
+  .formWrap form {
+    top: 210px;
+    height: 230px;
+    margin-left: 20px;
+  }
+
+  .formWrap:hover {
+    height: 740px;
+    top: -200px;
+  }
+  .formWrap:hover form {
+    height: 490px;
+  }
+}
+@media (max-width: 1260px) {
+  .formWrap:before {
+    height: 52vh;
+  }
+
+  .formWrap:after {
+    height: 43vh;
+  }
+  .formWrap form {
+    height: 350px;
+    top: 190px;
+  }
+  .formWrap form {
+    height: 180px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .formWrap:before {
+    height: 52vh;
+  }
+
+  .formWrap:after {
+    height: 47vh;
+  }
+  .formWrap form {
+    height: 350px;
+    top: 160px;
+  }
+  .formWrap form {
+    height: 180px;
+  }
+  /*Font size*/
+
+  .profile h1 {
+    padding-top: 10px;
+    font-size: 3.5rem;
+  }
+
+  .address {
+    margin-top: 40px;
+  }
+  .address h2 {
+    font-size: 1.7rem;
+  }
+  .address p {
+    font-size: 1rem;
+  }
+  .links a {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .links h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .profile {
+    width: 100%;
+  }
+  .formWrap:before {
+    height: 49vh;
+  }
+  .formWrap:after {
+    height: 47vh;
+  }
+  .formWrap form {
+    height: 150px;
+    top: 155px;
+    margin-left: 13px;
+  }
+  /*Font size*/
+
+  .profile h1 {
+    padding-top: 10px;
+    font-size: 3rem;
+  }
+
+  .address {
+    margin-top: 20px;
+  }
+  .address h2 {
+    font-size: 1.4rem;
+  }
+  .address p {
+    font-size: 0.9rem;
+  }
+  .links a {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .links h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .box1 {
+    height: 80%;
+  }
+  .box2 {
+    width: 46vw;
+  }
+  .container {
+    padding-top: 30px;
+    margin-bottom: -150px;
+  }
+  .profile {
+    width: 100%;
+  }
+  .formWrap:before {
+    height: 43vh;
+  }
+  .formWrap:after {
+    height: 44vh;
+  }
+  .formWrap form {
+    height: 100px;
+    top: 180px;
+    margin-left: 13px;
+  }
+  .formWrap:hover {
+    height: 750px;
+    top: -200px;
+  }
+
+  .formWrap input[type="submit"] {
+    margin-top: 30px;
+  }
+  .formWrap:hover form {
+    height: 430px;
+  }
+
+  /*Font size*/
+
+  .profile h1 {
+    font-size: 2.8rem;
+  }
+  .address {
+    margin-top: 20px;
+  }
+  .address h2 {
+    font-size: 1.5rem;
+  }
+  .address p {
+    font-size: 0.9rem;
+  }
+  .links a {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .links h2 {
+    padding-top: 20px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .box1 {
+    height: 80%;
+  }
+  .box2 {
+    width: 46vw;
+  }
+  .container {
+    padding-top: 30px;
+    margin-bottom: -150px;
+  }
+  .formWrap:before {
+    height: 45vh;
+  }
+  .formWrap:after {
+    height: 50vh;
+  }
+  .formWrap form {
+    height: 90px;
+    top: 140px;
+    margin-left: 10px;
+  }
+  .formWrap:hover {
+    height: 770px;
+    top: -200px;
+  }
+
+  .formWrap input[type="submit"] {
+    margin-top: 10px;
+  }
+  .formWrap:hover form {
+    height: 450px;
+  }
+  /*Font size*/
+
+  .profile h1 {
+    font-size: 2rem;
+  }
+  .address h2 {
+    font-size: 1.2rem;
+  }
+  .address p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .links a {
+    font-size: 0.8rem;
+  }
+
+  .links h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .box1 {
+    height: 80%;
+  }
+  .box2 {
+    width: 46vw;
+  }
+  .container {
+    padding-top: 30px;
+    margin-bottom: -190px;
+  }
+  .formWrap:before {
+    height: 45vh;
+  }
+  .formWrap:after {
+    height: 53vh;
+  }
+  .formWrap form {
+    height: 90px;
+    top: 120px;
+    margin-left: 8px;
+  }
+  .formWrap:hover {
+    height: 770px;
+    top: -200px;
+  }
+
+  .formWrap input[type="submit"] {
+    margin-top: 10px;
+  }
+
+  .formWrap:hover form {
+    height: 450px;
+  }
+
+  /*Font size*/
+
+  .profile h1 {
+    font-size: 1.5rem;
+  }
+  .address h2 {
+    font-size: 1rem;
+  }
+  .address p {
+    font-size: 0.6rem;
+  }
+  .links a {
+    font-size: 0.6rem;
+  }
+
+  .links h2 {
+    font-size: 1rem;
+  }
+}

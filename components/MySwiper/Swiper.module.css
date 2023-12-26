@@ -1,0 +1,167 @@
+.container {
+  max-width: 124rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+  background-color: #fff8f5;
+}
+.spacer {
+  bottom: 0;
+  margin: 0 -20px;
+}
+
+.spacerBottom {
+  position: relative;
+  margin-bottom: -10px;
+}
+.textCenter {
+  text-align: center;
+  font-size: clamp(10px, 4vw, 20px);
+  color: black;
+}
+
+.sectionHeading {
+  font-size: clamp(30px, 4vw, 45px);
+  color: black;
+  padding: 1rem 0;
+}
+
+.swiperContainer {
+  height: 32rem !important;
+  padding: 2rem 0 !important;
+  position: relative !important;
+}
+
+.swiperSlide {
+  width: 17rem !important;
+  height: 22rem !important;
+  position: relative !important ;
+}
+.swiperSlide .img {
+  width: 17rem;
+  height: 22rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.sliderControler {
+  margin-top: -3.5rem;
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderControler .swiperButtonNext,
+.sliderControler .swiperButtonPrev {
+  position: absolute;
+  color: black;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+.sliderControler .swiperButtonNext {
+  margin-left: 7rem;
+  transform: translateX(50%);
+}
+
+.sliderControler .swiperButtonPrev {
+  margin-right: 7rem;
+  transform: translateX(-50%);
+}
+
+.sliderControler .sliderArrow ion-icon {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.swiperPagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiperPagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.1));
+}
+
+.swiperSlide .trandingSlideContent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.trandingSlideContent .foodPrice {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: var(--white);
+}
+
+.trandingSlideContent .trandingSlideContentBottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: var(--white);
+}
+
+.foodRating {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.rating ion-icon {
+  color: gold;
+}
+.star {
+  color: gold;
+}
+@media (max-width: 500px) {
+  .swiperContainer {
+    height: 47rem;
+  }
+  .swiperSlide {
+    width: 15rem !important;
+    height: 19rem !important;
+  }
+  .swiperSlide .img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .sliderControler .swiperButtonNext {
+    right: 10% !important;
+    transform: translateX(10%) !important;
+  }
+
+  .sliderControler .swiperButtonPrev {
+    left: 10% !important;
+    transform: translateX(-10%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .sliderControler .swiperButtonNext {
+    right: 5% !important;
+    transform: translateX(5%) !important;
+  }
+
+  .sliderControler .swiperButtonPrev {
+    left: 5% !important;
+    transform: translateX(-5%) !important;
+  }
+}

@@ -1,0 +1,158 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(245, 240, 240, 0.52);
+  position: fixed;
+  top: 0;
+  color: black;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap {
+  background-color: white;
+  margin-top: 20px;
+  height: 30px;
+}
+
+.mainAddButton {
+  padding: 10px;
+  background-color: #ee4f27;
+  width: 150px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 500px;
+  background-color: white;
+  padding: 10px 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: -10%;
+  position: relative;
+}
+
+.wrapper h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input {
+  background-color: white;
+  border: none;
+  color: black;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+.textarea {
+  background-color: white;
+  color: black;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputSm {
+  width: 25%;
+}
+
+.extra {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extraItems {
+  margin: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.extraItem {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid tomato;
+  background-color: white;
+  color: tomato;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.extraButton {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid tomato;
+  background-color: white;
+  color: tomato;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.addButton {
+  width: 25%;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 5px 0;
+  align-self: flex-end;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.orderButton {
+  border: none;
+  margin-left: 40px;
+  background-color: #d1411e;
+  color: white;
+  width: 150px;
+  flex-basis: 150px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background-color: white;
+  border: 1px solid tomato;
+  color: rgb(0, 0, 0);
+  width: 150px;
+  flex-basis: 150px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
