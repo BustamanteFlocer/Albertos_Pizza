@@ -12,7 +12,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 95%;
-  margin-top: 50px;
+  margin: 50px 0;
   justify-content: center;
   align-items: center;
 }
@@ -20,23 +20,25 @@
 .box1 {
   width: 30vw;
   height: 100%;
-  margin-bottom: 30px;
 }
 .box2 {
   width: 46vw;
   height: 100%;
-  margin-bottom: 30px;
+}
+.textWrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .profile {
-  height: 77vh;
-  width: 35vw;
+  height: auto;
+  width: 30vw;
 }
 
 .profile h1 {
   color: #000;
   padding-top: 10px;
-  font-size: 4rem;
+  font-size: clamp(1.5rem, 4vw, 4rem);
 }
 
 .address {
@@ -44,19 +46,19 @@
 }
 .address h2 {
   color: #191923;
-  font-size: 1.9rem;
+  font-size: clamp(1rem, 4vw, 1.4rem);
 }
 
 .address p {
   color: #191923;
   margin-top: 15px;
   width: 60%;
-  font-size: 1.15rem;
+  font-size: clamp(0.1rem, 3vw, 1.15rem);
 }
 
 .links h2 {
   color: #191923;
-  font-size: 1.9rem;
+  font-size: clamp(1rem, 4vw, 1.4rem);
   padding-top: 30px;
   margin-bottom: 20px;
 }
@@ -70,7 +72,7 @@
   gap: 0.5rem;
 }
 .links a {
-  font-size: 1.15rem;
+  font-size: clamp(0.1rem, 3vw, 1.15rem);
   color: #000;
 }
 .links a {
@@ -91,10 +93,11 @@
 .formWrap {
   flex: 1;
   overflow: hidden;
-  height: 447px;
+  height: 75vh;
   position: relative;
-  width: 46vw;
+  width: 100%;
   top: 0px;
+  background-color: aquamarine;
   transition: all 1s ease-in-out 0.3s;
 }
 
@@ -104,10 +107,10 @@
   bottom: 128px;
   left: 0px;
   background: url("https://i.imgur.com/x7PdObG.png");
-  background-size: 46vw auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  width: 46vw;
-  height: 55vh;
+  width: 100%;
+  height: 52vh;
 }
 
 .formWrap:after {
@@ -116,10 +119,10 @@
   bottom: 0px;
   left: 0;
   background: url("https://i.imgur.com/lfI33tF.png");
-  background-size: 46vw auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  width: 46vw;
-  height: 45vh;
+  width: 100%;
+  height: 40vh;
 }
 
 .formWrap.hide:after,
@@ -136,13 +139,12 @@
   background: white;
   position: relative;
   top: 200px;
+  align-content: center;
   overflow: hidden;
-  height: 200px;
-  padding-top: 15px;
-  width: 43vw;
-  margin-left: 20px;
-  border: 1px solid white;
-  border-right: 3px;
+  height: 30vh;
+  padding-top: 10px;
+  margin: 0 10px;
+  width: 97%;
   transition: all 1s ease-in-out 0.3s;
 }
 
@@ -207,22 +209,6 @@
 }
 
 @media (max-width: 1350px) {
-  .formWrap {
-    height: 430px;
-  }
-  .formWrap:before {
-    height: 52vh;
-  }
-
-  .formWrap:after {
-    height: 40vh;
-  }
-  .formWrap form {
-    top: 210px;
-    height: 230px;
-    margin-left: 20px;
-  }
-
   .formWrap:hover {
     height: 740px;
     top: -200px;
@@ -232,23 +218,30 @@
   }
 }
 @media (max-width: 1260px) {
+  /*
   .formWrap:before {
     height: 52vh;
   }
 
   .formWrap:after {
     height: 43vh;
+  } */
+  .formWrap {
+    background-color: blue;
+    height: 80.5vh;
+  }
+  .formWrap:before {
+    bottom: 36%;
   }
   .formWrap form {
-    height: 350px;
-    top: 190px;
-  }
-  .formWrap form {
-    height: 180px;
+    top: 28vw;
+    width: 98.5%;
+    margin: 0 0 0 5px;
   }
 }
 
 @media (max-width: 1150px) {
+  /*
   .formWrap:before {
     height: 52vh;
   }
@@ -263,36 +256,41 @@
   .formWrap form {
     height: 180px;
   }
-  /*Font size*/
-
-  .profile h1 {
-    padding-top: 10px;
-    font-size: 3.5rem;
-  }
-
-  .address {
-    margin-top: 40px;
-  }
-  .address h2 {
-    font-size: 1.7rem;
-  }
-  .address p {
-    font-size: 1rem;
-  }
-  .links a {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .links h2 {
-    font-size: 1.7rem;
-  }
+  */
 }
 
+/*Start of column*/
+
 @media (max-width: 950px) {
+  .container {
+    flex-direction: column;
+  }
+  .box1 {
+    width: 100%;
+    padding: 20px;
+  }
+  .box2 {
+    width: 90%;
+    background-color: aqua;
+    padding: 20px;
+  }
+  .address {
+    margin-top: 30px;
+  }
+  .textWrapper {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .profile h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
   .profile {
     width: 100%;
+    background-color: gold;
   }
+  /*
   .formWrap:before {
     height: 49vh;
   }
@@ -304,46 +302,11 @@
     top: 155px;
     margin-left: 13px;
   }
-  /*Font size*/
-
-  .profile h1 {
-    padding-top: 10px;
-    font-size: 3rem;
-  }
-
-  .address {
-    margin-top: 20px;
-  }
-  .address h2 {
-    font-size: 1.4rem;
-  }
-  .address p {
-    font-size: 0.9rem;
-  }
-  .links a {
-    font-size: 0.9rem;
-    width: 100%;
-  }
-
-  .links h2 {
-    font-size: 1.4rem;
-  }
+  */
 }
 
 @media (max-width: 800px) {
-  .box1 {
-    height: 80%;
-  }
-  .box2 {
-    width: 46vw;
-  }
-  .container {
-    padding-top: 30px;
-    margin-bottom: -150px;
-  }
-  .profile {
-    width: 100%;
-  }
+  /*
   .formWrap:before {
     height: 43vh;
   }
@@ -366,137 +329,92 @@
   .formWrap:hover form {
     height: 430px;
   }
-
-  /*Font size*/
-
-  .profile h1 {
-    font-size: 2.8rem;
-  }
-  .address {
-    margin-top: 20px;
-  }
-  .address h2 {
-    font-size: 1.5rem;
-  }
-  .address p {
-    font-size: 0.9rem;
-  }
-  .links a {
-    width: 100%;
-    font-size: 0.9rem;
-  }
-
-  .links h2 {
-    padding-top: 20px;
-    font-size: 1.5rem;
-  }
+  */
 }
 
 @media (max-width: 700px) {
-  .box1 {
-    height: 80%;
-  }
-  .box2 {
-    width: 46vw;
-  }
-  .container {
-    padding-top: 30px;
-    margin-bottom: -150px;
+  .formWrap {
+    background-color: rgb(255, 0, 98);
+    height: 73.5vh;
   }
   .formWrap:before {
-    height: 45vh;
-  }
-  .formWrap:after {
-    height: 50vh;
+    bottom: 29%;
   }
   .formWrap form {
-    height: 90px;
-    top: 140px;
-    margin-left: 10px;
+    top: 28vw;
   }
+
   .formWrap:hover {
-    height: 770px;
+    height: 710px;
     top: -200px;
   }
-
-  .formWrap input[type="submit"] {
-    margin-top: 10px;
-  }
   .formWrap:hover form {
-    height: 450px;
-  }
-  /*Font size*/
-
-  .profile h1 {
-    font-size: 2rem;
-  }
-  .address h2 {
-    font-size: 1.2rem;
-  }
-  .address p {
-    font-size: 0.8rem;
-    width: 100%;
-  }
-  .links a {
-    font-size: 0.8rem;
-  }
-
-  .links h2 {
-    font-size: 1.2rem;
+    height: 440px;
   }
 }
 
-@media (max-width: 600px) {
-  .box1 {
-    height: 80%;
-  }
-  .box2 {
-    width: 46vw;
-  }
-  .container {
-    padding-top: 30px;
-    margin-bottom: -190px;
+@media (max-width: 650px) {
+  .formWrap {
+    background-color: rgb(0, 187, 255);
+    height: 72.9vh;
   }
   .formWrap:before {
-    height: 45vh;
-  }
-  .formWrap:after {
-    height: 53vh;
+    bottom: 23%;
   }
   .formWrap form {
-    height: 90px;
-    top: 120px;
-    margin-left: 8px;
+    top: 31vw;
   }
+
   .formWrap:hover {
-    height: 770px;
+    height: 710px;
     top: -200px;
   }
-
-  .formWrap input[type="submit"] {
-    margin-top: 10px;
-  }
-
   .formWrap:hover form {
-    height: 450px;
+    height: 440px;
+  }
+}
+@media (max-width: 600px) {
+  .formWrap {
+    background-color: rgb(98, 120, 107);
+    height: 65.5vh;
+  }
+  .formWrap:before {
+    bottom: 20%;
+  }
+  .formWrap form {
+    top: 26vw;
+    margin-left: 2px;
+    width: 99%;
   }
 
-  /*Font size*/
+  .formWrap:hover {
+    height: 660px;
+    top: -200px;
+  }
+  .formWrap:hover form {
+    height: 440px;
+  }
+}
 
-  .profile h1 {
-    font-size: 1.5rem;
+@media (max-width: 550px) {
+  .formWrap {
+    background-color: rgb(0, 255, 106);
+    height: 61.5vh;
   }
-  .address h2 {
-    font-size: 1rem;
+  .formWrap:before {
+    bottom: 15%;
   }
-  .address p {
-    font-size: 0.6rem;
-  }
-  .links a {
-    font-size: 0.6rem;
+  .formWrap form {
+    top: 25vw;
+    margin-left: 2px;
+    width: 99%;
   }
 
-  .links h2 {
-    font-size: 1rem;
+  .formWrap:hover {
+    height: 660px;
+    top: -200px;
+  }
+  .formWrap:hover form {
+    height: 440px;
   }
 }

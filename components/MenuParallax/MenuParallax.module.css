@@ -21,7 +21,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  white-space: nowrap;
+  text-align: center;
   transform: translate(-50%, -50%);
   color: #fff;
   font-family: Poppins;
@@ -31,17 +31,10 @@
   letter-spacing: 3px;
 }
 
-@media (max-width: 700px) {
-  .textContent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: Poppins;
-    font-weight: 500;
-    font-size: clamp(30px, 4vw, 50px);
-    text-transform: uppercase;
-    letter-spacing: 3px;
+@media (max-width: 600px) {
+  .content {
+    height: 25vh;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }

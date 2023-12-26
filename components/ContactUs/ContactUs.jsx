@@ -15,24 +15,27 @@ const ContactUs = () => {
         <div className={styles.box1} data-aos="fade-right">
           <div className={styles.profile}>
             <h1 className={styles.header}>Send Us A Message</h1>
-            <div className={styles.address}>
-              <h2>Address:</h2>
-              <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
-            </div>
-
-            <div className={styles.links}>
-              <h2>Contact us directly:</h2>
-              <div>
-                <span>
-                  <FiPhoneCall className={styles.linkIcon} />
-                </span>
-                <a href="tel:+4733378901">+47 333 78 901</a>
+            <div className={styles.textWrapper}>
+              <div className={styles.textBox}></div>
+              <div className={styles.address}>
+                <h2>Address:</h2>
+                <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
               </div>
-              <div>
-                <span>
-                  <HiOutlineMailOpen className={styles.linkIcon} />
-                </span>
-                <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+              <div className={styles.textBox}></div>
+              <div className={styles.links}>
+                <h2>Contact:</h2>
+                <div>
+                  <span>
+                    <FiPhoneCall className={styles.linkIcon} />
+                  </span>
+                  <a href="tel:+4733378901">+47 333 78 901</a>
+                </div>
+                <div>
+                  <span>
+                    <HiOutlineMailOpen className={styles.linkIcon} />
+                  </span>
+                  <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+                </div>
               </div>
             </div>
           </div>
