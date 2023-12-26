@@ -82,6 +82,10 @@
   color: orange;
 }
 
+.message {
+  padding-top: 15px;
+}
+
 /*Envelope*/
 
 .formWrap {

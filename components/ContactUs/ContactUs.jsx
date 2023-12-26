@@ -41,7 +41,9 @@ const ContactUs = () => {
         <div className={styles.box2}>
           <div id={styles.formWrap} className={styles.formWrap}>
             <form action="">
-              <label htmlFor="message">message:</label>
+              <label className={styles.message} htmlFor="message">
+                message:
+              </label>
               <textarea
                 name="message"
                 id={styles.message}
