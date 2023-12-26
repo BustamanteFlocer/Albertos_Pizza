@@ -14,7 +14,7 @@ const Dashboard = ({ products }) => {
     console.log(id);
     try {
       const res = await axios.delete(
-        "http://localhost:3000/api/products/" + id
+        "https://albertos-pizza.vercel.app/api/products/" + id
       );
       setPizzaList(pizzaList.filter((pizza) => pizza._id !== id));
     } catch (err) {
@@ -88,7 +88,9 @@ export const getServerSideProps = async (ctx) => {
     };
   }
 
-  const productRes = await axios.get("http://localhost:3000/api/products");
+  const productRes = await axios.get(
+    "https://albertos-pizza.vercel.app/api/products"
+  );
 
   return {
     props: {
