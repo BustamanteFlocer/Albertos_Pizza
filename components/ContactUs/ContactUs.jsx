@@ -43,7 +43,6 @@ const ContactUs = () => {
         <div className={styles.box2}>
           <div id={styles.formWrap} className={styles.formWrap}>
             <form action="">
-              <p className={styles.text}>hello joe!</p>
               <label htmlFor="message">message:</label>
               <textarea
                 name="message"
@@ -52,8 +51,6 @@ const ContactUs = () => {
                 rows="10"
                 placeholder="Your message"
               ></textarea>
-
-              <p className={styles.text}>Best,</p>
 
               <label htmlFor="name">Name:</label>
               <input
