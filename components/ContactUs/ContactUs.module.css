@@ -507,6 +507,7 @@
 
 @media (max-width: 400px) {
   .formWrap {
+    overflow: visible;
     height: 37.5vh;
   }
   .formWrap:before {
