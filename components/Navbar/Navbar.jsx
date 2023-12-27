@@ -16,13 +16,15 @@ const Navbar = () => {
         <GiHamburgerMenu className={styles.menuIcon} />
         <IoClose className={styles.closeIcon} />
       </label>
-      <Image
-        className={styles.img}
-        src="/img/albertos.png"
-        alt=""
-        width="130"
-        height="80"
-      />
+      <div className={styles.logo}>
+        <Image
+          className={styles.img}
+          src="/img/albertos.png"
+          alt=""
+          width="130"
+          height="80"
+        />
+      </div>
 
       <ul className={styles.list}>
         <Link href="/" passHref>
