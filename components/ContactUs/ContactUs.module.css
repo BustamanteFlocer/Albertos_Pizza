@@ -273,6 +273,7 @@
     bottom: 5%;
   }
 }
+
 @media (min-width: 1000px) and (max-width: 1049px) {
   .formWrap {
     height: 80.5vh;
@@ -360,6 +361,38 @@
     bottom: 0%;
   }
 }
+@media (min-width: 820px) and (max-width: 820px) {
+  .formWrap {
+    height: 48.5vh;
+    background-color: rgb(81, 255, 0);
+  }
+  .formWrap:before {
+    bottom: -20%;
+  }
+  .formWrap form {
+    height: 20vh;
+    top: 34vw;
+  }
+  .formWrap:after {
+    bottom: -30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 768px) {
+  .formWrap {
+    height: 48.5vh;
+    background-color: red;
+  }
+  .formWrap:before {
+    bottom: -10%;
+  }
+  .formWrap form {
+    height: 20vh;
+    top: 30vw;
+  }
+  .formWrap:after {
+    bottom: -30%;
+  }
+}
 
 @media (max-width: 700px) {
   .formWrap {
@@ -444,6 +477,34 @@
   }
 }
 
+@media (max-width: 450px) {
+  .formWrap {
+    height: 37.5vh;
+  }
+  .formWrap:before {
+    bottom: -41%;
+  }
+  .formWrap:after {
+    content: "";
+    position: absolute;
+    bottom: -40%;
+  }
+  .formWrap form {
+    top: 30vw;
+    height: 14vh;
+    margin-left: 2px;
+    width: 99%;
+  }
+
+  .formWrap:hover {
+    height: 660px;
+    top: -200px;
+  }
+  .formWrap:hover form {
+    height: 440px;
+  }
+}
+
 @media (max-width: 400px) {
   .formWrap {
     height: 37.5vh;
@@ -457,17 +518,19 @@
     bottom: -50%;
   }
   .formWrap form {
-    top: 29vw;
+    top: 27vw;
     height: 20vh;
+
     margin-left: 2px;
     width: 99%;
   }
 
   .formWrap:hover {
-    height: 660px;
-    top: -200px;
+    height: 380px;
+    top: -10px;
   }
   .formWrap:hover form {
-    height: 440px;
+    height: 500px;
+    top: 0%;
   }
 }
