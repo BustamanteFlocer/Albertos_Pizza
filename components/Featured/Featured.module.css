@@ -42,7 +42,7 @@
 
 .heroText .p {
   font-size: clamp(0.5rem, 4vw, 1.4rem);
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 20px;
   color: black;
 }
