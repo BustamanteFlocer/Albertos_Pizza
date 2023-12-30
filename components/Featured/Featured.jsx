@@ -14,15 +14,16 @@ const Featured = () => {
         <div className={styles.left}>
           <div className={styles.heroText}>
             <h2 className={styles.h2} data-aos="fade-up">
-              Fast and Tasty
+              A Taste You'll Surely Miss
             </h2>
             <h1 className={styles.h1} data-aos="fade-up" data-aos-delay="300">
-              TRY A BETTER & <span style={{ color: "red" }}>FASTER</span> EATING
-              EXPERIENCE
+              BRIDGING BUDGET AND FLAVOR FOR{" "}
+              <span style={{ color: "red" }}>PIZZA</span> LOVERS EVERYWHERE
             </h1>
             <p className={styles.p} data-aos="fade-up" data-aos-delay="500">
-              Indulge in artisanal coffee delights. Crafted with passion, brewed
-              with perfection. Savor the Flavor!
+              Experience a culinary journey at Alberto's Pizza, where
+              affordability meets exceptional flavor, crafting an unmatched
+              delight for your taste buds.
             </p>
             <button className={styles.button}>Order Now</button>
           </div>
