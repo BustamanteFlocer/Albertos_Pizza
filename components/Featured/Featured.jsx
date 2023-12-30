@@ -17,8 +17,8 @@ const Featured = () => {
               A Taste You'll Surely Miss
             </h2>
             <h1 className={styles.h1} data-aos="fade-up" data-aos-delay="300">
-              BRIDGING BUDGET AND FLAVOR FOR{" "}
-              <span style={{ color: "red" }}>PIZZA</span> LOVERS
+              BRIDGING BUDGET AND <span style={{ color: "red" }}>FLAVOR</span>{" "}
+              FOR PIZZA LOVERS
             </h1>
             <p className={styles.p} data-aos="fade-up" data-aos-delay="500">
               Experience a culinary journey at Alberto's Pizza, where
