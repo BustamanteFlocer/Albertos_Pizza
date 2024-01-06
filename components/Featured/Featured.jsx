@@ -27,7 +27,7 @@ const Featured = () => {
             <button className={styles.button}>Order Now</button>
           </div>
         </div>
-        <div className={styles.right} data-aos="fade-left" data-aos-delay="500">
+        <div className={styles.right}>
           <div className={styles.img}>
             <Image
               className={styles.featured1}
@@ -35,6 +35,8 @@ const Featured = () => {
               alt=""
               width="550"
               height="380"
+              data-aos="fade-left"
+              data-aos-delay="500"
             />
             <Image
               className={styles.featured2}
