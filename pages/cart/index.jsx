@@ -48,7 +48,7 @@ const Cart = () => {
         type: "resetOptions",
         value: {
           ...options,
-          currency: currency,
+          currency: "PHP",
         },
       });
     }, [currency, showSpinner]);
@@ -67,7 +67,7 @@ const Cart = () => {
                 purchase_units: [
                   {
                     amount: {
-                      currency_code: currency,
+                      currency_code: "PHP",
                       value: amount,
                     },
                   },
@@ -96,7 +96,7 @@ const Cart = () => {
   return (
     <div className={styles.contain}>
       <Navbar />
-      <div className={` ${styles.pageHeader}`}>
+      <div className={`${styles.pageHeader}`}>
         <h1>Cart</h1>
       </div>
       <div className={styles.container}>

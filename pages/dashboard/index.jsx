@@ -1,8 +1,8 @@
 import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
-import styles from "../styles/Dashboard.module.css";
-import NavAdmin from "./NavAdmin";
+import styles from "@/pages/dashboard/Dashboard.module.css";
+import NavAdmin from "../../components/NavAdmin/NavAdmin";
 import AddButton from "@/components/AddButton/AddButton";
 import Add from "@/components/Add/Add";
 
@@ -58,7 +58,6 @@ const Dashboard = ({ products }) => {
                     <td>{product.title}</td>
                     <td>₱{product.prices[0]}</td>
                     <td>
-                      <button className={styles.button}>Edit</button>
                       <button
                         className={styles.button}
                         onClick={() => handleDelete(product._id)}

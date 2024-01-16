@@ -1,8 +1,7 @@
 import axios from "axios";
-import Image from "next/image";
 import { useState } from "react";
-import styles from "../styles/AdminOrders.module.css";
-import NavAdmin from "./NavAdmin";
+import styles from "@/pages/AdminOrders/AdminOrders.module.css";
+import NavAdmin from "../../components/NavAdmin/NavAdmin";
 
 const AdminOrders = ({ orders }) => {
   const [orderList, setOrderList] = useState(orders);
@@ -50,7 +49,7 @@ const AdminOrders = ({ orders }) => {
             <table className={styles.table}>
               <thead>
                 <tr>
-                  <th>Id </th>
+                  <th>Id</th>
                   <th>Customer</th>
                   <th>Total</th>
                   <th>Payment</th>

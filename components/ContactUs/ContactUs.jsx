@@ -2,14 +2,55 @@ import styles from "@/components/ContactUs/ContactUs.module.css";
 import { IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
+import dynamic from "next/dynamic";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactUs = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
+  const ToastContainer = dynamic(
+    () => import("react-toastify").then((module) => module.ToastContainer),
+    {
+      ssr: false,
+    }
+  );
+
+  const informUser = () => {
+    toast.success("Email sent successfully!", {
+      autoClose: 3000, // Close the toast after 3 seconds
+    });
+  };
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_cthp8xd",
+        "template_gt90bno",
+        form.current,
+        "EH5XM71TgfKiW1cIq"
+      )
+      .then(
+        (result) => {
+          form.current.reset();
+          informUser();
+        },
+        (error) => {
+          window.alert("Error sending email. Please try again later.");
+        }
+      );
+  };
+
   return (
     <div className={styles.contain}>
       <div className={styles.wrapper}>
@@ -32,21 +73,37 @@ const ContactUs = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d981.3526442090455!2d123.8906106!3d10.3089892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9994dde515555%3A0xf9e837c1d36fb6cc!2sAlberto&#39;s%20Pizza!5e0!3m2!1sen!2sph!4v1703507321310!5m2!1sen!2sph"
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
 
             <div className={styles.contactInput}>
-              <form action="" className="">
-                <input type="text" placeholder=" Your Name"></input>
-                <input type="email" placeholder=" Enter Your Email"></input>
+              <form ref={form} onSubmit={sendEmail}>
+                <input
+                  type="text"
+                  placeholder=" Your Name"
+                  name="user_name"
+                  required
+                ></input>
+                <input
+                  type="email"
+                  placeholder=" Enter Your Email"
+                  name="user_email"
+                  required
+                ></input>
                 <textarea
                   rows="5"
                   cols="10"
                   placeholder="Your Message"
+                  id="message"
+                  name="message"
+                  required
                 ></textarea>
-                <button type="submit">Submit</button>
+                <button className={styles.button} type="submit" value="Send">
+                  Submit
+                </button>
               </form>
+              <ToastContainer />
             </div>
 
             <div className={styles.contactInfoWrapper}>

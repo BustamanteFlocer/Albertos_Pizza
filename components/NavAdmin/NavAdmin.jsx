@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/NavAdmin.module.css";
+import styles from "@/components/NavAdmin/NavAdmin.module.css";
 import { TiShoppingCart } from "react-icons/ti";
 import { BiLogOut } from "react-icons/bi";
 import { MdRestaurantMenu } from "react-icons/md";
@@ -14,10 +14,10 @@ const NavAdmin = () => {
             <div className={styles.logo}>
               <Image
                 className={styles.img}
-                src="/img/featured1.png"
+                src="/img/adminImg.png"
                 alt=""
-                height="45"
-                width="45"
+                height="65"
+                width="65"
               />
               <span className={styles.navItem}>Admin</span>
             </div>

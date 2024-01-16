@@ -16,7 +16,7 @@ const OrderDetail = ({ total, createOrder, setShowOrderDetail }) => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h1 className={styles.title}>You will pay $12 after delivery</h1>
+        <h1 className={styles.title}>CASH ON DELIVERY</h1>
 
         <div className={styles.item}>
           <label className={styles.label}>Full Name</label>

@@ -29,7 +29,7 @@
 
 .desc {
   text-align: center;
-  flex-basis: 120px;
+  flex-basis: 10vw;
   color: #151414;
 }
 
@@ -42,21 +42,16 @@
   box-shadow: 0 0 10px rgba(245, 100, 4, 0.667);
 }
 
-/*
-.container .button {
+.button {
   background-color: #d1411e;
-  margin: 10px;
-  color: white;
-  padding: 10px;
-  width: 100%;
-}
-
-.orderButton {
-  background-color: #d1411e;
-  border: none;
+  border-radius: 50px;
   color: white;
   cursor: pointer;
-}*/
+  padding: 10px;
+  border: none;
+  text-align: center;
+  width: 150px;
+}
 
 @media (max-width: 1200px) {
   .container {
@@ -70,8 +65,17 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
   .container {
     width: 100%;
+  }
+  .desc {
+    flex-basis: 10vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .desc {
+    flex-basis: 15vh;
   }
 }

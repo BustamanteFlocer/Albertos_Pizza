@@ -5,6 +5,7 @@ import Link from "next/link";
 import { TiShoppingCart } from "react-icons/ti";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+
 const Navbar = () => {
   const quantity = useSelector((state) => state.cart.quantity);
 
@@ -21,8 +22,8 @@ const Navbar = () => {
           className={styles.img}
           src="/img/albertos.png"
           alt=""
-          width="130"
-          height="80"
+          width="110"
+          height="60"
         />
       </div>
 
@@ -30,16 +31,16 @@ const Navbar = () => {
         <Link href="/" passHref>
           <li className={styles.listItem}>Home</li>
         </Link>
-        <Link href="/Menu/Menu" passHref>
+        <Link href="/Menu" passHref>
           <li className={styles.listItem}>Menu</li>
         </Link>
-        <Link href="/about/about" passHref>
+        <Link href="/about" passHref>
           <li className={styles.listItem}>About</li>
         </Link>
-        <Link href="/Contact/Contact" passHref>
+        <Link href="/Contact" passHref>
           <li className={styles.listItem}>Contact</li>
         </Link>
-        <Link href="/cart/cart" passHref>
+        <Link href="/cart" passHref>
           <div className={styles.listItem}>
             <div className={styles.cart}>
               <TiShoppingCart className={styles.shoppingCart} />

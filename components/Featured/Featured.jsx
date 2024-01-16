@@ -3,6 +3,7 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
+import Link from "next/link";
 
 const Featured = () => {
   useEffect(() => {
@@ -24,7 +25,9 @@ const Featured = () => {
               Experience a culinary journey at Alberto's Pizza, where
               affordability meets exceptional flavor.
             </p>
-            <button className={styles.button}>Order Now</button>
+            <Link href="/Menu" passHref>
+              <button className={styles.button}>Order Now</button>
+            </Link>
           </div>
         </div>
         <div className={styles.right}>

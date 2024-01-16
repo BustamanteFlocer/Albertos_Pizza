@@ -5,6 +5,7 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { LiaTwitter } from "react-icons/lia";
 import { TiSocialPinterest } from "react-icons/ti";
 import { LiaInstagram } from "react-icons/lia";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -49,18 +50,21 @@ const Footer = () => {
                 Homepage
               </a>
             </li>
+
             <li className={styles.link}>
-              <a className={styles.anchor} href="">
+              <a href="/Menu" className={styles.anchor}>
                 Menu
               </a>
             </li>
+
             <li className={styles.link}>
-              <a className={styles.anchor} href="">
+              <a className={styles.anchor} href="/about">
                 About
               </a>
             </li>
+
             <li className={styles.link}>
-              <a className={styles.anchor} href="">
+              <a className={styles.anchor} href="/Contact">
                 Contact Us
               </a>
             </li>

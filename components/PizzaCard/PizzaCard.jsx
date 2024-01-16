@@ -17,13 +17,11 @@ const PizzaCard = ({ pizza }) => {
       <h1 className={styles.title}>{pizza.title}</h1>
       <span className={styles.price}>₱{pizza.prices[0]}</span>
       <p className={styles.desc}>{pizza.desc}</p>
-      {/* 
-      <div className={styles.button}> 
+      <div className="">
         <Link href={`/product/${pizza._id}`} passHref>
-          <button className={styles.orderButton}>Order</button>
+          <button className={styles.button}>Order</button>
         </Link>
       </div>
-      */}
     </div>
   );
 };
