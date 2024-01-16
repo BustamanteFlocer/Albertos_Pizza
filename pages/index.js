@@ -18,7 +18,7 @@ export default function Home({ pizzaList }) {
       <Head>
         <title>Alberto's Pizza</title>
         <meta name="description" content="Best pizza in town" />
-        <link rel="icon" href="/logoalberto.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <Featured></Featured>
