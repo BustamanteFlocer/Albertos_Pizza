@@ -50,7 +50,7 @@ const AdminOrders = ({ orders }) => {
             <table className={styles.table}>
               <thead>
                 <tr>
-                  <th>Id</th>
+                  <th>Id </th>
                   <th>Customer</th>
                   <th>Total</th>
                   <th>Payment</th>
